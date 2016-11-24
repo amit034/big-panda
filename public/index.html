@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/big-panda.css" media="all">
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+</head>
+
+<body ng-app="big-panda-app" ng-controller="comments">
+    <div class="comments-board">
+        <div class="add-comment-container">
+            <input placeholder="E-mail" ng-model="email" class="add-comment-item">
+            <textarea  placeholder="Message" ng-class="add-comment-item" rows="4" cols="50" ng-model="message"></textarea>
+            <div class="add-comment-item add-comment-submit-item"><button ng-class="submit" ng-click="addComment()">Submit</button></div>
+        </div>
+        <div>
+        <div class="comments-list-container">
+            <input class="filter" placeholder="Filter" ng-model="search" type="text"><br>
+            <ul class="comment-list">
+                <li  class="comment-list-item" ng-repeat="comment in comments | filter:search">
+                    <div class="comment-container" >
+                      <aside class="aside"><img class="avatar" ng-src="{{comment.avatar}}"></aside>
+                      <div class="main">
+                          <header class="header">{{comment.email}}</header>
+                          <article>
+                            <p>{{comment.message}}</p>
+                            </article>
+                      </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

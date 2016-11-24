@@ -1,0 +1,9 @@
+{
+  "name": "big-panda-client",
+  "version": "0.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.5",
+    "jquery": "~2.1.4"
+  }
+}

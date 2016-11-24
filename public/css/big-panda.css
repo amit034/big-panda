@@ -1,7 +1,7 @@
 .comments-board{
   width: 300px;
   padding: 30px;
-  background-color: #fbfbfb;
+  background-color: #f6f4f7;
 }
 .comments-list-container , .add-comment-container, .comment-container{
   display: -webkit-box;
@@ -18,7 +18,7 @@
 }
 .add-comment-container {
   padding:10px;
-  background-color: #ECE9E9;
+  background-color: #eceaed;
 }
 .comments-list-container{
   padding: 10px;
@@ -35,7 +35,14 @@
 }
 .submit{
     height: 30px;
-    background-color: #afafaf;
+	width: 70px;
+    background-color: #afafaf; 
+    margin: -1px -1px -1px 0;
+    padding: 0;
+    border: 1px solid #2d87c0;
+    background: #4b9fd5;
+    color: #fff;
+    font-weight: 400;
 }
 .avatar{
   width: 60px;

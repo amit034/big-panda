@@ -45,7 +45,7 @@ app.get('/comments' , function (req, res) {
 });
 
 app.use(errorHandler());
-app.listen(3002, function () {
+app.listen(3000, function () {
   mongoose.connect('mongodb://test:test@ds019950.mlab.com:19950/example');
   console.log('Big Panda app listening on port 3000!')
 });
